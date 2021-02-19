@@ -4,15 +4,31 @@ Rails.application.routes.draw do
 #nomenclature a respecter
 
 #On met un hash avec une clé TO :
-#On lui indique le controller à appeler
+#On lui indique le controller à appeler pour aller dans le controller Restaurants
+#Et appeller la methode
 
 #racine
-root to: 'home#home'
+#reprendre le nom du controller
+root to: 'restaurants#index'
 
-get '/index', to: 'restaurants#index'
-get '/index/:name', to: 'restaurants#show'
+get '/restaurants', to: 'restaurants#restaurants'
+
+get "/restaurants", to: "restaurants#index"
+
+get '/restaurants', to: 'restaurants#show'
+
+get '/restaurants', to: 'restaurants#new'
+
+#get '/restaurants', to: 'restaurants#restaurant'
 
 
+#get '/restaurants/:id', to: 'restaurants#show'
+
+#to fix
+#
+#get '/show', to: 'restaurants#show'
+
+#get '/new', to: 'restaurants#new'
 #action def INDEX vers page INDEX
 #
 end

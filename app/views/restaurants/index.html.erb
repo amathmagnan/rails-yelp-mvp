@@ -10,4 +10,19 @@ endroit</strong></h2>
   Livré chez vous dans 20 minutes.
 </p>
 
+
+
+<%= "test-list restaurant en dessous" %>
+
+  <% @restaurants.each do |restaurant| %>
+  <h2><%= restaurant.name %></h2>
+  <p><%=  restaurant.address %></p>
+  <p><%=  restaurant.phone_number %></p>
+
+<% end %>
+
+
 <%= %>
+
+
+

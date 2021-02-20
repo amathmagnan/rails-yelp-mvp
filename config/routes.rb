@@ -9,15 +9,20 @@ Rails.application.routes.draw do
 
 #racine
 #reprendre le nom du controller
-root to: 'restaurants#index'
 
-get '/restaurants', to: 'restaurants#restaurants'
+root to: 'restaurants#home'
 
-get "/restaurants", to: "restaurants#index"
+resources :restaurants
 
-get '/restaurants', to: 'restaurants#show'
 
-get '/restaurants', to: 'restaurants#new'
+
+#get '/restaurants', to: 'restaurants#restaurants'
+
+#get "/restaurants", to: "restaurants#index"
+
+#get '/restaurants', to: 'restaurants#show'
+
+#get '/restaurants', to: 'restaurants#new'
 
 #get '/restaurants', to: 'restaurants#restaurant'
 

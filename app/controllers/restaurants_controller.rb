@@ -15,9 +15,9 @@ def restaurants
 
 
 
-#def home
- #   @restaurants = Restaurant.all
-#end
+def home
+    @restaurants = Restaurant.all
+end
 
 #show = restaurant ? = no linked yet
 def show
